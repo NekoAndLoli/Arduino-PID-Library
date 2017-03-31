@@ -35,10 +35,10 @@ class PID
     void SetTunings(double, double,       // * While most users will set the tunings once in the 
                     double);         	  //   constructor, this function gives the user the option
                                           //   of changing tunings during runtime for Adaptive control
-	void SetControllerDirection(int);	  // * Sets the Direction, or "Action" of the controller. DIRECT
-										  //   means the output will increase when error is positive. REVERSE
-										  //   means the opposite.  it's very unlikely that this will be needed
-										  //   once it is set in the constructor.
+	void SetControllerDirection(int); // * Sets the Direction, or "Action" of the controller. DIRECT
+				  	  //   means the output will increase when error is positive. REVERSE
+					  //   means the opposite.  it's very unlikely that this will be needed
+					  //   once it is set in the constructor.
     void SetSampleTime(int);              // * sets the frequency, in Milliseconds, with which 
                                           //   the PID calculation is performed.  default is 100
 										  
